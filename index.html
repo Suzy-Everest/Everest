@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Everest - Personal Portfolio">
+  <meta name="author" content="Everest">
+  <title>Everest | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Simple Icons CDN (SVG icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@latest/font/simple-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-scroll">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <span class="loader-text">✨ Loading...</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="navbar-brand">
+      <img src="assets/images/logo.png" class="logo" alt="brand">
+      <span class="brand-name" aria-label="Everest">
+        <span class="brand-part">E</span><span class="brand-v-slot"><span class="brand-v" aria-hidden="true">V</span><span class="brand-heart" role="img" aria-hidden="true">❤</span></span><span class="brand-part">EREST</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about-new">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#resume">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects">Project</a>
+      </li>
+      <li class="nav-item">
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a href="#awards">Awards</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ============================== -->
+  <!-- HOME SECTION                   -->
+  <!-- ============================== -->
+  <section class="home-section" id="home">
+    <div class="home-content">
+      <div class="home-header">
+        <div class="home-hero-titles">
+          <h2 class="heading">
+            Hi! Welcome here!
+            <span class="wave" role="img" aria-label="wave">👋🏻</span>
+          </h2>
+          <h1 class="heading-name">
+            I'M
+            <strong class="main-name"> Everest </strong>
+          </h1>
+        </div>
+        <div class="typewriter-wrapper" aria-live="polite">
+          <div class="typewriter-inner">
+            <span id="typewriter"></span><span class="typewriter-cursor"></span>
+          </div>
+        </div>
+      </div>
+      <div class="home-image">
+        <img src="assets/images/home-profile.png" alt="home pic">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- ABOUT SECTION                  -->
+  <!-- ============================== -->
+  <section class="about-section-new" id="about-new">
+    <div class="home-about-row">
+      <div class="home-about-img">
+        <img class="about-img-default" src="assets/images/about-profile.png" alt="about" loading="lazy">
+        <img class="about-img-hover" src="assets/images/about-profile-hover.png" alt="about hover" loading="lazy">
+      </div>
+      <div class="home-about-text">
+        <h2 class="about-title-inline"><span class="about-pink">ABOUT</span> <span class="about-black">ME</span></h2>
+        <div class="home-about-card">
+          <p>🎓 MS Student at Xi'an Jiaotong University. Journalism & New Media.</p>
+          <p>🎓 B.S. in Communication Engineering at Guangzhou University.</p>
+          <p>🏆 GPA: 3.8/4 in GZHU, 3.9/4 in XJTU, rank: top 5% in both.</p>
+          <p>🧸 Internship: eclicktech Overseas Ads & AI Ops. </p>
+          <p>🎁 Startup Cultural & Creative PM. Xiaohongshu 1.2M+ viral engagement.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="about-social">
+      <p class="about-social-title">FIND ME ON</p>
+      <ul class="about-social-links">
+        <li class="social-icons">
+          <a href="#" class="social-icon-btn" title="Phone" data-phone="13574131806">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm-2.5 13.5h-5a1 1 0 1 1 0-2h5a1 1 0 1 1 0 2zm2-4h-9a1 1 0 1 1 0-2h9a1 1 0 1 1 0 2zm0-4h-9a1 1 0 0 1 0-2h9a1 1 0 0 1 0 2z"/></svg>
+          </a>
+        </li>
+        <li class="social-icons">
+          <a href="#" class="social-icon-btn" title="WeChat" data-wechat="SuzyEverest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.062-6.122zm-2.18 2.909c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+          </a>
+        </li>
+        <li class="social-icons">
+          <a href="mailto:SuzyEverest@163.com" class="social-icon-btn" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="about-social-subtitle">Feel free to <span class="highlight-pink">contact</span> with me</p>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- RESUME SECTION                 -->
+  <!-- ============================== -->
+  <section class="resume-section" id="resume">
+    <div class="section-container">
+      <h1 class="project-heading">
+        My <strong class="orange">Resume</strong>
+      </h1>
+
+      <!-- Education Section -->
+      <div class="timeline-section">
+        <h2 class="timeline-section-title">🎓 Education</h2>
+        <div class="timeline">
+          <!-- Education Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024.09 - Present</div>
+              <h3 class="timeline-title">Xi'an Jiaotong University</h3>
+              <div class="timeline-subtitle">M.A in Journalism and Communication</div>
+              <div class="timeline-details">
+                <span class="timeline-tag">GPA: 3.9/4</span>
+                <span class="timeline-tag">Rank: Top 5%</span>
+              </div>
+              <img src="assets/images/xjtu-logo.png" alt="XJTU Logo" class="school-logo">
+            </div>
+          </div>
+          <!-- Education Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020.09 - 2024.06</div>
+              <h3 class="timeline-title">Guangzhou University</h3>
+              <div class="timeline-subtitle">B.Eng. in Communication Engineering</div>
+              <div class="timeline-details">
+                <span class="timeline-tag">GPA: 3.8/4</span>
+                <span class="timeline-tag">Rank: Top 3%</span>
+              </div>
+              <img src="assets/images/gzu-logo.png" alt="GZU Logo" class="school-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="timeline-section">
+        <h2 class="timeline-section-title">💼 Work Experience</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="timeline-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="internship">实习实践</button>
+          <button class="filter-btn" data-filter="student">学生工作</button>
+
+        </div>
+
+        <div class="timeline">
+          <!-- Internship Items (Pink) -->
+          <div class="timeline-item" data-category="internship">
+            <div class="timeline-dot internship-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag internship-tag">实习实践</span>
+              <div class="timeline-date">2025.08 - 2026.01</div>
+              <h3 class="timeline-title">易点天下（西安）</h3>
+              <div class="timeline-subtitle">海外广告优化实习生</div>
+              <p class="timeline-desc">竞标拿下巴西外卖项目；大模型广告投放；输出日本储能市场分析报告</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="internship">
+            <div class="timeline-dot internship-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag internship-tag">实习实践</span>
+              <div class="timeline-date">2025.06 - Present</div>
+              <h3 class="timeline-title">寒霜降数字科技</h3>
+              <div class="timeline-subtitle">文创产品经理</div>
+              <p class="timeline-desc">西交文创 IP 开发；供应链成本优化 30%；小红书曝光 2w+，客户复购 30%+</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="internship">
+            <div class="timeline-dot internship-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag internship-tag">实习实践</span>
+              <div class="timeline-date">2025.07 - 2025.08</div>
+              <h3 class="timeline-title">伊西哈拉镇人民政府</h3>
+              <div class="timeline-subtitle">宣传部干事</div>
+              <p class="timeline-desc">政务活动策划、宣传视频剪辑、官方平台运营</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="internship">
+            <div class="timeline-dot internship-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag internship-tag">实习实践</span>
+              <div class="timeline-date">2024.01 - 2024.04</div>
+              <h3 class="timeline-title">全球购骑士特权</h3>
+              <div class="timeline-subtitle">新媒体媒介专员</div>
+              <p class="timeline-desc">多平台 KOL 商务拓展、直播 / 短视频合作、达人资源维护</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="internship">
+            <div class="timeline-dot internship-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag internship-tag">实习实践</span>
+              <div class="timeline-date">2023.02 - 2023.04</div>
+              <h3 class="timeline-title">广州粤嵌通信科技</h3>
+              <div class="timeline-subtitle">嵌入式实习生</div>
+              <p class="timeline-desc">基于 Linux+ARM Cortex-A 平台，使用 C 语言开发语音识别系统；实现音频采集、多格式多媒体播放、网络传输与语音指令交互</p>
+            </div>
+          </div>
+
+          <!-- Student Work Items (Blue) -->
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2026.02 - 2026.03</div>
+              <h3 class="timeline-title">西交硕博联谊报名系统</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">独立 PRD 全流程，8000 + 硕博报名，系统稳定性 99%</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2025.11 - 2025.12</div>
+              <h3 class="timeline-title">元旦游园会</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">统筹 30 个学院，覆盖 1w + 师生，活动零中断</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2025.03 - 2025.04</div>
+              <h3 class="timeline-title">"我和春天有个约会" 硕博联谊</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">线下 6000 + 参与，获陕西省高校精品项目</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2025.03 - 2025.04</div>
+              <h3 class="timeline-title">抖音俱乐部樱花活动</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">1000 + 到场，传播西交校园文化</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2025.04</div>
+              <h3 class="timeline-title">AIGC 微短剧</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">脚本撰写 + AI 视频制作，传播传统文化</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2024.09 - Present</div>
+              <h3 class="timeline-title">小红书影视解析账号</h3>
+              <div class="timeline-subtitle">负责人</div>
+              <p class="timeline-desc">涨粉 2500+，总阅读 2000w+，爆款 200+</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2025.06 - Present</div>
+              <h3 class="timeline-title">仙交融媒</h3>
+              <div class="timeline-subtitle">宣传部负责人</div>
+              <p class="timeline-desc">统筹校园新媒体宣传</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2024.09 - Present</div>
+              <h3 class="timeline-title">研会校园文化部</h3>
+              <div class="timeline-subtitle">主任</div>
+              <p class="timeline-desc">视觉物料设计，活动统筹落地</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2024.09 - 2025.09</div>
+              <h3 class="timeline-title">研会融媒体中心</h3>
+              <div class="timeline-subtitle">成员</div>
+              <p class="timeline-desc">20 + 篇推文，熟练 PR/Procreate</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-category="student">
+            <div class="timeline-dot student-dot"></div>
+            <div class="timeline-content">
+              <span class="category-tag student-tag">学生工作</span>
+              <div class="timeline-date">2020.09 - 2024.06</div>
+              <h3 class="timeline-title">广州大学</h3>
+              <div class="timeline-subtitle">团支书</div>
+              <p class="timeline-desc">班级统筹管理，4 年考核优秀，获优秀团支部</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="resume-btn-container">
+        <a href="assets/lucyling_cv.pdf" target="_blank" class="resumebtn">
+          📄 Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- PROJECTS SECTION               -->
+  <!-- ============================== -->
+  <section class="project-section" id="projects">
+    <div class="section-container">
+      <h1 class="project-heading">
+        My Recent <strong class="pink">Projects</strong>
+      </h1>
+      <p class="project-subtitle">Here are a few projects I've worked on recently.</p>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/stm32-door-lock.png" alt="STM32 Smart Door Lock" class="card-img-top" loading="lazy">
+            <h4>可远程控制的基于STM32单片机的智能门禁系统</h4>
+            <p>基于STM32F407开发板，集成指纹识别、密码解锁、RFID刷卡、远程控制等多种开锁方式。通过ESP8266 WiFi模块实现云端连接，支持手机APP远程开锁和实时监控。系统具备多模态验证、ONENET云平台远程控制、响应延迟＜200ms。</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/spring-dating-system.png" alt="Spring Dating System" class="card-img-top" loading="lazy">
+            <h4>"我和春天有个约会"硕博联谊报名系统</h4>
+            <p>独立负责PRD全流程设计与开发，系统承载8000+硕博报名，系统稳定性达99%。线下6000+参与，获陕西省高校精品项目。</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/vi-design-system.png" alt="VI Design System" class="card-img-top" loading="lazy">
+            <h4>VI设计系统</h4>
+            <p>完整的品牌视觉识别系统设计，包含Logo、色彩规范、字体规范、应用延展等设计元素，建立统一的品牌视觉语言。</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/network-monitor.png" alt="Network Monitor" class="card-img-top" loading="lazy">
+            <h4>网络监视器</h4>
+            <p>能在网络中不断发现和记录各种细粒度数据的网络监视器，具备灵活性、低开销、实时性三大核心优势，实现细粒度网络监测与链路拥塞分级。</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/linux-voice-recognition.jpg" alt="Linux Voice Recognition" class="card-img-top" loading="lazy">
+            <h4>基于Linux的嵌入式语音识别系统</h4>
+            <p>基于Linux+ARM Cortex-A平台，使用C语言开发语音识别系统，实现音频采集、多格式多媒体播放、网络传输与语音指令交互，语音识别准确率达95%。</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/canteen-vi.jpg" alt="Canteen VI System" class="card-img-top" loading="lazy">
+            <h4>食堂VI系统</h4>
+            <p>为食堂量身打造的视觉识别系统设计，包含品牌Logo、色彩搭配、导视系统、餐具包装等全套视觉规范，营造统一的品牌形象。</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/children-ai-book.jpg" alt="Children and AI Book" class="card-img-top" loading="lazy">
+            <h4>儿童与AI方向书籍</h4>
+            <p>面向儿童的人工智能科普书籍设计，通过生动有趣的图文内容，帮助儿童了解AI基础知识，培养科技素养和创新思维。</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card">
+          <div class="project-card-view">
+            <img src="assets/projects/sailboat-price.png" alt="Sailboat Price Estimation" class="card-img-top" loading="lazy">
+            <h4>Informing the effect of used sailboat properties: A price estimation model via the data-driven Informer</h4>
+            <p>基于数据驱动Informer模型的二手帆船价格预测研究，收集3500条全球数据，构建价格预测模型，输出市场分析报告。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication Stamp Album -->
+      <div class="stamp-album-section">
+        <h2 class="stamp-album-title">📄 Publications</h2>
+        <div class="stamp-album-row">
+          <!-- Album 1: Pink -->
+          <div class="stamp-album-wrapper">
+            <a href="assets/7.1论文二作（指导老师一作）SCI-Q1 CAAI Trans on Intel Tech - 2023 - Wei - Iteration dependent interval based open‐closed‐loop iterative learning control for.pdf" target="_blank" class="stamp-album-link">
+              <div class="folder-container">
+                <div class="folder-base"></div>
+                <div class="folder-inner"></div>
+                <div class="folder-cover">
+                  <div class="folder-text">
+                    <div class="folder-title-ja">Publication</div>
+                    <div class="folder-title-en">Wang Jinfan</div>
+                  </div>
+                </div>
+                <div class="stamp-card stamp-1">
+                  <img src="assets/images/paper_page_1.png" alt="Paper Page 1" loading="lazy">
+                </div>
+                <div class="stamp-card stamp-2">
+                  <img src="assets/images/paper_page_2.png" alt="Paper Page 2" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <p class="paper-info">Iteration dependent interval based open‐closed‐loop iterative learning control for time varying systems with vector relative
+              degree.<br><strong>CAAI Trans. on Intelligent Technology, 2023</strong> | SCI-Q1 | 二作（指导老师一作）</p>
+          </div>
+          <!-- Album 2: Yellow -->
+          <div class="stamp-album-wrapper">
+            <a href="assets/7.2论文三作（指导老师一作）ICCR Open-Closed-Loop Iterative Learning Control for Non-linear Discrete-time Systems under Iterative Varying Duration.pdf" target="_blank" class="stamp-album-link">
+              <div class="folder-container folder-yellow">
+                <div class="folder-base"></div>
+                <div class="folder-inner"></div>
+                <div class="folder-cover">
+                  <div class="folder-text">
+                    <div class="folder-title-ja">Publication</div>
+                    <div class="folder-title-en">Wang Jinfan</div>
+                  </div>
+                </div>
+                <div class="stamp-card stamp-1">
+                  <img src="assets/images/paper_page_3.png" alt="ICCR Acceptance" loading="lazy">
+                </div>
+                <div class="stamp-card stamp-2">
+                  <img src="assets/images/paper_page_4.png" alt="ICCR Paper" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <p class="paper-info">Open-Closed-Loop Iterative Learning Control for Non-linear Discrete-time Systems under Iterative Varying Duration.<br><strong>ICCR, 2023</strong> | EI | 三作（指导老师一作）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- GALLERY SECTION                -->
+  <!-- ============================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <h1 class="project-heading">
+        My <strong class="pink">Gallery</strong>
+      </h1>
+
+      <div class="gallery-content">
+        <!-- Carousel -->
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Previous">❮</button>
+          <div class="carousel-inner">
+            <div class="item">
+              <img src="assets/images/gallery/1.jpg" alt="Gallery 1" class="carousel-img" loading="lazy">
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/2.jpg" alt="Gallery 2" class="carousel-img" loading="lazy">
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/3.jpg" alt="Gallery 3" class="carousel-img" loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Next">❯</button>
+        </div>
+        <div class="carousel-dots" style="text-align:center;margin-top:15px;"></div>
+
+        <!-- Waterfall Gallery -->
+        <div class="gallery-wrap" style="margin-top:40px;">
+          <div class="gallery-column">
+            <img src="assets/images/gallery/4.jpg" alt="Gallery 4" loading="lazy">
+            <img src="assets/images/gallery/8.jpg" alt="未命名作品 12" loading="lazy">
+            <img src="assets/images/gallery/12.jpg" alt="花裙甜妹" loading="lazy">
+          </div>
+          <div class="gallery-column">
+            <div class="gallery-hover-img">
+              <img src="assets/images/gallery/5-hover.jpg" alt="Gallery 5 Default" class="img-default" loading="lazy">
+              <img src="assets/images/gallery/5.jpg" alt="Gallery 5 Hover" class="img-hover" loading="lazy">
+            </div>
+            <img src="assets/images/gallery/9.jpg" alt="未命名作品 11" loading="lazy">
+            <img src="assets/images/gallery/13.jpg" alt="Lolita妹妹" loading="lazy">
+          </div>
+          <div class="gallery-column">
+            <img src="assets/images/gallery/6.jpg" alt="盒子 2" loading="lazy">
+            <img src="assets/images/gallery/10.jpg" alt="未命名作品 10" loading="lazy">
+          </div>
+          <div class="gallery-column">
+            <img src="assets/images/gallery/7.jpg" alt="盒子" loading="lazy">
+            <img src="assets/images/gallery/11.jpg" alt="制服女孩" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- AWARDS SECTION                 -->
+  <!-- ============================== -->
+  <section class="awards-section" id="awards">
+    <div class="section-container">
+      <h1 class="project-heading">
+        My <strong class="blue">Awards</strong>
+      </h1>
+      <p class="project-subtitle">A collection of my honors and achievements.</p>
+
+      <div class="awards-grid">
+        <div class="award-item">
+          <img src="assets/images/awards/20-21一等奖学金.jpg" alt="20-21一等奖学金" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/20-21优秀学生.jpg" alt="20-21优秀学生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/2022-2023十佳学生.jpg" alt="2022-2023十佳学生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/2023.07美赛H奖.jpg" alt="2023.07美赛H奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/2024届优秀实习生.jpg" alt="2024届优秀实习生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/21-22一等奖学金.jpg" alt="21-22一等奖学金" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/21-22优秀学生.jpg" alt="21-22优秀学生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/21-22优秀学生干部.jpg" alt="21-22优秀学生干部" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/22-23一等奖学金.jpg" alt="22-23一等奖学金" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/22-23优秀学生.jpg" alt="22-23优秀学生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/22-23德才兼备家国情怀先进个人.jpg" alt="22-23德才兼备家国情怀先进个人" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/23-24一等奖学金.jpg" alt="23-24一等奖学金" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/23-24优秀学生.jpg" alt="23-24优秀学生" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/NEWC全国三等奖.jpg" alt="NEWC全国三等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/互联网+校赛铜奖.jpg" alt="互联网+校赛铜奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/优秀工作干事.png" alt="优秀工作干事" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/优秀毕业论文.jpg" alt="优秀毕业论文" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/优秀研会干事.png" alt="优秀研会干事" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/优秀青年志愿者.jpg" alt="优秀青年志愿者" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/国才初级证书.png" alt="国才初级证书" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/国才杯写作校赛二等奖.png" alt="国才杯写作校赛二等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/外研社写作比赛二等奖.jpg" alt="外研社写作比赛二等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/外研社笔译比赛二等奖.jpg" alt="外研社笔译比赛二等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/外研社阅读比赛一等奖.jpg" alt="外研社阅读比赛一等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/广州大学优秀共青团干部.jpg" alt="广州大学优秀共青团干部" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/微光支教优秀志愿者.png" alt="微光支教优秀志愿者" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/挑战杯校2.jpg" alt="挑战杯校2" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/研究生优秀志愿者.png" alt="研究生优秀志愿者" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/网络技术挑战赛一等奖.jpg" alt="网络技术挑战赛一等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/网络技术挑战赛国赛二等奖.png" alt="网络技术挑战赛国赛二等奖" loading="lazy">
+        </div>
+        <div class="award-item">
+          <img src="assets/images/awards/词达人省级一等奖.png" alt="词达人省级一等奖" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============================== -->
+  <!-- FOOTER                         -->
+  <!-- ============================== -->
+  <footer class="footer">
+    <div class="footer-copyright">
+      <h2>Stop thinking, start doing.</h2>
+      <h3>✨ Copyright © Everest <span id="current-year"></span> ✨</h3>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script>
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
