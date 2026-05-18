@@ -124,43 +124,43 @@ button:focus {
 
 .navbar.sticky {
   transition: all 0.3s ease-out 0s !important;
-  background: rgba(255, 255, 255, 0.25) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
 }
 
 /* Navbar colors for different sections */
 .navbar.nav-pink {
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 .navbar.nav-green {
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 .navbar.nav-white {
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 .navbar.nav-cream {
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
@@ -475,7 +475,8 @@ button:focus {
 .about-img-hover {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   opacity: 0;
 }
 
@@ -650,17 +651,47 @@ button:focus {
   text-shadow: 0 0 2px #ffdbe2;
 }
 
+@media (min-width: 769px) and (max-width: 1100px) {
+  .home-about-img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img-hover {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .about-section-new {
+    padding-bottom: 200px;
+  }
+
   .home-about-row {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin: 0;
   }
+
+  .home-about-text {
+    order: -1;
+  }
+
+  .home-about-img {
+    order: 0;
+  }
   
   .home-about-img img {
     max-height: 300px;
+  }
+
+  .home-about-img {
+    text-align: center;
+    width: 100%;
   }
   
   .home-about-text {
@@ -1203,19 +1234,23 @@ button:focus {
 
 /* Timeline Container */
 .timeline {
+  --timeline-axis: 13px;
+  --timeline-line-width: 3px;
+  --timeline-dot-size: 14px;
+  --timeline-gutter: 48px;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
-  padding-left: 35px;
+  padding-left: var(--timeline-gutter);
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: calc(var(--timeline-axis) - (var(--timeline-line-width) / 2));
   top: 0;
   bottom: 0;
-  width: 3px;
+  width: var(--timeline-line-width);
   background: #A4DCCC;
   border-radius: 3px;
 }
@@ -1224,7 +1259,7 @@ button:focus {
 .timeline-item {
   position: relative;
   margin-bottom: 30px;
-  padding-left: 40px;
+  padding-left: 28px;
   opacity: 1;
   transform: translateY(0);
   transition: all 0.4s ease;
@@ -1242,10 +1277,10 @@ button:focus {
 /* Timeline Dot */
 .timeline-dot {
   position: absolute;
-  left: -6px;
+  left: calc(var(--timeline-axis) - var(--timeline-gutter) - (var(--timeline-dot-size) / 2));
   top: 12px;
-  width: 14px;
-  height: 14px;
+  width: var(--timeline-dot-size);
+  height: var(--timeline-dot-size);
   border-radius: 50%;
   background: #4ABA9A;
   border: none;
@@ -1312,6 +1347,8 @@ button:focus {
   color: #666;
   font-weight: 500;
   margin-bottom: 8px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Timeline Title */
@@ -1320,6 +1357,8 @@ button:focus {
   font-weight: 700;
   color: #1f1f1f;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Timeline Subtitle (Position) */
@@ -1328,6 +1367,8 @@ button:focus {
   color: #555;
   font-weight: 500;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Timeline Description */
@@ -1417,6 +1458,8 @@ button:focus {
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline-tag {
@@ -1429,40 +1472,50 @@ button:focus {
   color: #555;
 }
 
-/* School Logo in Education */
+.timeline-content {
+  position: relative;
+  overflow: hidden;
+}
+
 .school-logo {
   position: absolute;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 130px;
-  height: 130px;
+  top: 9px;
+  width: 170px;
+  height: 170px;
   object-fit: contain;
-  opacity: 0.9;
-}
-
-.timeline-content {
-  position: relative;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
   .timeline {
-    padding-left: 20px;
+    --timeline-axis: 8px;
+    --timeline-gutter: 34px;
+    padding-left: var(--timeline-gutter);
   }
 
   .timeline-item {
-    padding-left: 25px;
+    padding-left: 24px;
   }
 
   .timeline-dot {
-    left: -28px;
-    width: 14px;
-    height: 14px;
+    width: var(--timeline-dot-size);
+    height: var(--timeline-dot-size);
   }
 
   .timeline-content {
     padding: 15px 20px;
+  }
+
+  .school-logo {
+    right: 15px;
+    top: 9px;
+    width: 128px;
+    height: 128px;
+    opacity: 0.16;
   }
 
   .timeline-title {
@@ -1700,10 +1753,10 @@ button:focus {
 
 /* Navbar color for Awards section */
 .navbar.nav-blue {
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.35) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
@@ -1788,9 +1841,10 @@ button:focus {
   .navbar {
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    background-color: rgba(232, 232, 232, 0.24) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
+    background-color: rgba(232, 232, 232, 0.34) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    overflow: visible;
   }
 
   .navbar-toggler {
@@ -1798,19 +1852,23 @@ button:focus {
   }
 
   .navbar-nav {
-    display: none;
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(232, 232, 232, 0.24) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
+    margin: 0;
+    padding: 0 0;
+    list-style: none;
     flex-direction: column;
-    padding: 20px;
     gap: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1001;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
+    border-radius: 0 0 20px 20px;
   }
 
   .navbar-nav.active {
@@ -1819,23 +1877,42 @@ button:focus {
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(232, 232, 232, 0.24) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    border-radius: 0 0 16px 16px !important;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
-    flex-direction: column;
-    padding: 20px;
-    gap: 0;
+    padding: 18px 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+    max-height: 400px;
+    opacity: 1;
   }
 
   .nav-item {
     margin-left: 0;
+    width: 100% !important;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
+  .navbar-nav.active .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-nav.active .nav-item:nth-child(1) { transition-delay: 0.05s; }
+  .navbar-nav.active .nav-item:nth-child(2) { transition-delay: 0.1s; }
+  .navbar-nav.active .nav-item:nth-child(3) { transition-delay: 0.15s; }
+  .navbar-nav.active .nav-item:nth-child(4) { transition-delay: 0.2s; }
+  .navbar-nav.active .nav-item:nth-child(5) { transition-delay: 0.25s; }
+  .navbar-nav.active .nav-item:nth-child(6) { transition-delay: 0.3s; }
+
   .nav-item a {
-    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
     font-size: 1.2em;
     width: 100%;
     min-width: 0;
@@ -1849,6 +1926,15 @@ button:focus {
   .nav-item:nth-child(6) a {
     min-width: 0;
     width: 100%;
+  }
+
+  .nav-item:nth-child(1),
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3),
+  .nav-item:nth-child(4),
+  .nav-item:nth-child(5),
+  .nav-item:nth-child(6) {
+    width: 100% !important;
   }
 
   .home-section {
@@ -2354,13 +2440,18 @@ button:focus {
   background: transparent;
   border: 2px solid currentColor;
   color: inherit;
-  padding: 5px 12px;
+  padding: 0;
+  width: 50px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
   border-radius: 20px;
   font-size: 0.85em;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   opacity: 0.6;
+  box-sizing: border-box;
 }
 
 .lang-btn:hover {
@@ -2382,9 +2473,14 @@ button:focus {
 }
 
 .navbar .lang-btn {
-  padding: 4px 10px;
+  padding: 0;
+  width: 44px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
   font-size: 0.8em;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 /* Mobile responsive for language switcher */
@@ -2399,9 +2495,14 @@ button:focus {
   }
   
   .navbar .lang-btn {
-    padding: 3px 8px;
+    padding: 0;
+    width: 38px;
+    height: 28px;
+    line-height: 24px;
+    text-align: center;
     font-size: 0.75em;
     border-radius: 12px;
+    box-sizing: border-box;
   }
 }
 
@@ -2414,8 +2515,13 @@ button:focus {
   }
   
   .navbar .lang-btn {
-    padding: 2px 6px;
+    padding: 0;
+    width: 34px;
+    height: 26px;
+    line-height: 22px;
+    text-align: center;
     font-size: 0.7em;
     border-radius: 10px;
+    box-sizing: border-box;
   }
 }
